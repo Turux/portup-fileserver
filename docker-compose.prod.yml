@@ -15,7 +15,7 @@ services:
       - static:/usr/share/nginx/html
       - ./frontend/build:/usr/share/nginx/html/
       - ./webserver/nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./webserver/nginx/site.com.conf:/etc/nginx/sites-enabled/site.com.conf # change site.com (!)
+      - ./webserver/nginx/file.portableupdate.com.conf:/etc/nginx/sites-enabled/file.portableupdate.com.conf # change site.com (!)
       - ./webserver/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./webserver/certbot/conf:/etc/letsencrypt
       - ./webserver/certbot/www:/var/www/certbot
